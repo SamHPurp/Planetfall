@@ -1407,6 +1407,7 @@
 #include "code\modules\jobs\job_types\cargo_service.dm"
 #include "code\modules\jobs\job_types\civilian.dm"
 #include "code\modules\jobs\job_types\civilian_chaplain.dm"
+#include "code\modules\jobs\job_types\colony.dm"
 #include "code\modules\jobs\job_types\engineering.dm"
 #include "code\modules\jobs\job_types\job.dm"
 #include "code\modules\jobs\job_types\medical.dm"

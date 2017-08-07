@@ -22,7 +22,8 @@
 	/obj/structure/falsewall/reinforced,
 	/turf/closed/wall/rust,
 	/turf/closed/wall/r_wall/rust,
-	/turf/closed/wall/clockwork)
+	/turf/closed/wall/clockwork,
+	/turf/closed/wall/planet/wood_wall)
 	smooth = SMOOTH_TRUE
 
 /turf/closed/wall/attack_tk()

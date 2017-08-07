@@ -1,0 +1,7 @@
+{
+    "map_name": "Persephone",
+    "map_path": "map_files/Persephone",
+    "map_file": "Persephone.dmm",
+    "minetype": "lavaland",
+    "transition_config": "default"
+}

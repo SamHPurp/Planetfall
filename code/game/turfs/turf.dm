@@ -3,7 +3,7 @@
 	level = 1
 
 	var/intact = 1
-	var/turf/baseturf = /turf/open/space
+	var/turf/baseturf = /turf/open/floor/planet/dirt
 
 	var/temperature = T20C
 	var/to_be_destroyed = 0 //Used for fire, if a melting temperature was reached, it will be destroyed
@@ -225,7 +225,7 @@
 	var/old_affecting_lights = affecting_lights
 	var/old_lighting_object = lighting_object
 	var/old_corners = corners
- 
+
 	var/old_exl = explosion_level
 	var/old_exi = explosion_id
 	var/old_bp = blueprint_data
@@ -249,7 +249,7 @@
 		W.AfterChange(ignore_air)
 
 	W.blueprint_data = old_bp
- 
+
 	if(SSlighting.initialized)
 		recalc_atom_opacity()
 		lighting_object = old_lighting_object

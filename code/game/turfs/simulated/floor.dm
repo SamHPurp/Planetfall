@@ -115,7 +115,7 @@
 	burnt = 1
 
 /turf/open/floor/proc/make_plating()
-	return ChangeTurf(/turf/open/floor/plating)
+	return ChangeTurf(/turf/open/floor/planet/dirt)
 
 /turf/open/floor/ChangeTurf(new_path)
 	if(!isfloorturf(src))

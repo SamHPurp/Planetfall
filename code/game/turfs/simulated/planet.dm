@@ -4,14 +4,14 @@
 	planetary_atmos = TRUE
 
 /turf/open/floor/planet/grass
-  icon = 'icons/turf/floors/planet.dmi'
-  icon_state = "grass-1"
-  var/ore_type = /obj/item/weapon/ore/glass
+	icon = 'icons/turf/floors/planet.dmi'
+	icon_state = "grass-1"
+	var/ore_type = /obj/item/weapon/ore/glass
 	var/turfverb = "uproot"
 
 /turf/open/floor/planet/grass/Initialize()
-  . = ..()
-  icon_state = "grass-[rand(1, 4)]"
+	. = ..()
+	icon_state = "grass-[rand(1, 4)]"
 
 /turf/open/floor/planet/grass/attackby(obj/item/C, mob/user, params)
 	if(istype(C, /obj/item/weapon/shovel) && params)

@@ -4,7 +4,12 @@
  planetary_atmos = TRUE
 
 /turf/open/floor/planet/grass
-	icon_state = "grass"
+  icon = 'icons/turf/floors/planet.dmi'
+  icon_state = "grass-1"
+
+/turf/open/floor/planet/grass/Initialize()
+  . = ..()
+  icon_state = "grass-[rand(1, 4)]"
 
 /turf/open/floor/planet/dirt
 
@@ -33,7 +38,7 @@
 	sheet_type = /obj/item/stack/sheet/mineral/wood
 	hardness = 70
 	explosion_block = 0
-	canSmoothWith = list(/turf/closed/wall/mineral/wood, /obj/structure/falsewall/wood)
+	canSmoothWith = list(/turf/closed/wall/mineral/wood, /obj/structure/falsewall/wood, /turf/closed/wall/planet/wood_wall)
 
 /turf/closed/wall/planet/shuttle
 	icon = 'icons/turf/shuttle.dmi'

@@ -165,6 +165,17 @@
 /obj/effect/landmark/start/new_player
 	name = "New Player"
 
+// Planet spawn points
+
+/obj/effect/landmark/start/colonist
+	name = "Colonist"
+
+/obj/effect/landmark/start/colony_director
+	name = "Colony Director"
+
+/obj/effect/landmark/start/assistant_director
+	name = "Assistant Director"
+
 // Must be on New() rather than Initialize, because players will
 // join before SSatom initializes everything.
 /obj/effect/landmark/start/new_player/New(loc)

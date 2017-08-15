@@ -45,7 +45,7 @@
 	if(mapload)
 		MakeDirty()
 
-/turf/open/floor/ex_act(severity, target)
+/turf/open/floor/ex_act(severity, target, destructionoverride = FALSE)
 	var/shielded = is_shielded()
 	..()
 	if(severity != 1 && shielded && target != src)
@@ -54,7 +54,8 @@
 		src.ChangeTurf(src.baseturf)
 	if(target != null)
 		severity = 3
-
+	if(destructionoverride)
+		return
 	switch(severity)
 		if(1)
 			src.ChangeTurf(src.baseturf)
@@ -147,7 +148,7 @@
 	var/obj/item/weapon/crowbar/CB = user.is_holding_item_of_type(/obj/item/weapon/crowbar)
 	if(!CB)
 		return
-	var/turf/open/floor/plating/P = pry_tile(CB, user, TRUE)
+	var/turf/open/floor/planet/dirt/P = pry_tile(CB, user, TRUE)
 	if(!istype(P))
 		return
 	P.attackby(T, user, params)

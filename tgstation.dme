@@ -917,6 +917,7 @@
 #include "code\game\objects\structures\musician.dm"
 #include "code\game\objects\structures\noticeboard.dm"
 #include "code\game\objects\structures\petrified_statue.dm"
+#include "code\game\objects\structures\pitfall.dm"
 #include "code\game\objects\structures\plasticflaps.dm"
 #include "code\game\objects\structures\reflector.dm"
 #include "code\game\objects\structures\safe.dm"

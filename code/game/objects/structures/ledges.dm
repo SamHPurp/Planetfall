@@ -3,7 +3,7 @@ Ledges!
 */
 
 
-obj/structure/ledge
+/obj/structure/ledge
 	name = "ledge"
 	desc = "You could probably jump over it or something."
 	anchored = TRUE
@@ -16,14 +16,14 @@ obj/structure/ledge
 	var/staircase = FALSE //Has someone built stairs into the rockface?
 	pixel_x = -3
 	pixel_y = -3
-	layer = ABOVE_NORMAL_TURF_LAYER
+	layer = ABOVE_OPEN_TURF_LAYER
 
-obj/structure/ledge/Initialize()
+/obj/structure/ledge/Initialize()
 	..()
 	icon_state = "generic" //Totally hacky but it gets the job done
 	update_icon()
 
-obj/structure/ledge/update_icon()
+/obj/structure/ledge/update_icon()
 	..()
 	cut_overlays()
 	for(var/D in GLOB.cardinals)
@@ -35,7 +35,7 @@ obj/structure/ledge/update_icon()
 			add_overlay("[dir2text(D)]")
 	queue_smooth(src)
 
-obj/structure/ledge/proc/ledgeCheck(mob/living/M)
+/obj/structure/ledge/proc/ledgeCheck(mob/living/M)
 	if(M.movement_type == FLYING) //Flying mobs can fly over ledges!
 		return FALSE
 	else if(staircase)
@@ -49,23 +49,24 @@ obj/structure/ledge/proc/ledgeCheck(mob/living/M)
 	else if(facesdirection & WEST && x > M.x)
 		return TRUE
 
-obj/structure/ledge/CanPass(atom/movable/AM)
-	if(ismob(AM) && ledgeCheck(AM))
+/obj/structure/ledge/CanPass(mob/living/M)
+	if(ismob(M) && ledgeCheck(M))
 		return FALSE
 	else
 		return ..()
 
-obj/structure/ledge/Uncrossed(atom/movable/AM)
-	if(ismob(AM) && ledgeCheck(AM))
-		to_chat(AM, "<span class = 'notice'>You hop over [src]!</span>")
-		..()
-	else
-		return ..()
+/obj/structure/ledge/Uncrossed(mob/living/M)
+	if(ismob(M) && !(M.incapacitated()) && ledgeCheck(M) && !M.buckled) // If they're not a mob, incapacitated, buckled to anything or other, don't do the hop thing
+		to_chat(M, "<span class = 'notice'>You hop over [src]!</span>")
+		animate(M, pixel_y = M.pixel_y + 8, time = 2, easing = QUAD_EASING)
+		sleep(2)
+		animate(M, pixel_y = M.pixel_y - 8, time = 2, easing = QUAD_EASING)
+	..()
 
-obj/structure/ledge/ex_act()
+/obj/structure/ledge/ex_act()
 	return
 
-obj/structure/ledge/crumbling/attackby(obj/item/weapon/pickaxe/W, mob/user)
+/obj/structure/ledge/crumbling/attackby(obj/item/weapon/pickaxe/W, mob/user)
 	if(!istype(W, /obj/item/weapon/pickaxe) || staircase)
 		return ..()
 	user.visible_message("<span class = 'notice'>[user] is digging into [src]...</span>", "<span class = 'notice'>You begin to hew a crude staircase from the ledge...</span>")
@@ -78,71 +79,71 @@ obj/structure/ledge/crumbling/attackby(obj/item/weapon/pickaxe/W, mob/user)
 		desc = "A set of rough stone steps allows passage here."
 
 //crumbling ledges can have stairs built into them
-obj/structure/ledge/crumbling
+/obj/structure/ledge/crumbling
 	name = "crumbling ledge"
 	desc = "This ledge looks somewhat weathered. You reckon you could dig some stairs into it, if you had the tools and the time."
 
 //Directional ledges for mapping
-obj/structure/ledge/north
+/obj/structure/ledge/north
 	facesdirection = NORTH
 	icon_state = "north"
 
-obj/structure/ledge/northeast
+/obj/structure/ledge/northeast
 	facesdirection = NORTH|EAST
 	icon_state = "northeast"
 
-obj/structure/ledge/east
+/obj/structure/ledge/east
 	facesdirection = EAST
 	icon_state = "east"
 
-obj/structure/ledge/southeast
+/obj/structure/ledge/southeast
 	facesdirection = SOUTH|EAST
 	icon_state = "southeast"
 
-obj/structure/ledge/south
+/obj/structure/ledge/south
 	facesdirection = SOUTH
 	icon_state = "south"
 
-obj/structure/ledge/southwest
+/obj/structure/ledge/southwest
 	facesdirection = SOUTH|WEST
 	icon_state = "southwest"
 
-obj/structure/ledge/west
+/obj/structure/ledge/west
 	facesdirection = WEST
 	icon_state = "west"
 
-obj/structure/ledge/northwest
+/obj/structure/ledge/northwest
 	facesdirection = NORTH|WEST
 	icon_state = "northwest"
 
-obj/structure/ledge/opentonorth
+/obj/structure/ledge/opentonorth
 	facesdirection = EAST|SOUTH|WEST
 	icon_state = "opentonorth"
 
-obj/structure/ledge/opentoeast
+/obj/structure/ledge/opentoeast
 	facesdirection = NORTH|SOUTH|WEST
 	icon_state = "opentoeast"
 
-obj/structure/ledge/opentosouth
+/obj/structure/ledge/opentosouth
 	facesdirection = NORTH|EAST|WEST
 	icon_state = "opentosouth"
 
-obj/structure/ledge/opentowest
+/obj/structure/ledge/opentowest
 	facesdirection = NORTH|EAST|SOUTH
 	icon_state = "opentowest"
 
-obj/structure/ledge/crumbling/north
+/obj/structure/ledge/crumbling/north
 	facesdirection = NORTH
 	icon_state = "crumblingnorth"
 
-obj/structure/ledge/crumbling/east
+/obj/structure/ledge/crumbling/east
 	facesdirection = EAST
 	icon_state = "crumblingeast"
 
-obj/structure/ledge/crumbling/south
+/obj/structure/ledge/crumbling/south
 	facesdirection = SOUTH
 	icon_state = "crumblingsouth"
 
-obj/structure/ledge/crumbling/west
+/obj/structure/ledge/crumbling/west
 	facesdirection = WEST
 	icon_state = "crumblingwest"

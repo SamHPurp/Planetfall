@@ -1,8 +1,8 @@
 /datum/round_event_control/wizard/darkness
 	name = "Advanced Darkness"
-	weight = 2
+	weight = 0
 	typepath = /datum/round_event/wizard/darkness
-	max_occurrences = 2
+	max_occurrences = 0
 	earliest_start = 0
 
 /datum/round_event/wizard/darkness

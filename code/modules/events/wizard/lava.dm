@@ -1,8 +1,8 @@
 /datum/round_event_control/wizard/lava //THE LEGEND NEVER DIES
 	name = "The Floor Is LAVA!"
-	weight = 2
+	weight = 0
 	typepath = /datum/round_event/wizard/lava
-	max_occurrences = 3
+	max_occurrences = 0
 	earliest_start = 0
 
 /datum/round_event/wizard/lava

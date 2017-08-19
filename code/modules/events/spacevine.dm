@@ -1,8 +1,8 @@
 /datum/round_event_control/spacevine
 	name = "Spacevine"
 	typepath = /datum/round_event/spacevine
-	weight = 15
-	max_occurrences = 3
+	weight = 0
+	max_occurrences = 0
 	min_players = 10
 
 /datum/round_event/spacevine/start()

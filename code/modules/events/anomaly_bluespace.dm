@@ -1,8 +1,8 @@
 /datum/round_event_control/anomaly/anomaly_bluespace
 	name = "Anomaly: Bluespace"
 	typepath = /datum/round_event/anomaly/anomaly_bluespace
-	max_occurrences = 1
-	weight = 5
+	max_occurrences = 0
+	weight = 0
 
 /datum/round_event/anomaly/anomaly_bluespace
 	startWhen = 3

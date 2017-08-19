@@ -1,8 +1,8 @@
 /datum/round_event_control/wizard/petsplosion //the horror
 	name = "Petsplosion"
-	weight = 2
+	weight = 0
 	typepath = /datum/round_event/wizard/petsplosion
-	max_occurrences = 1 //Exponential growth is nothing to sneeze at!
+	max_occurrences = 0 //Exponential growth is nothing to sneeze at!
 	earliest_start = 0
 	var/mobs_to_dupe = 0
 
@@ -29,4 +29,3 @@
 				mobs_duped++
 				if(mobs_duped > 400)
 					kill()
-

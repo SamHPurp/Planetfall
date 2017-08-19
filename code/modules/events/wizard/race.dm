@@ -1,8 +1,8 @@
 /datum/round_event_control/wizard/race //Lizard Wizard? Lizard Wizard.
 	name = "Race Swap"
-	weight = 2
+	weight = 0
 	typepath = /datum/round_event/wizard/race
-	max_occurrences = 5
+	max_occurrences = 0
 	earliest_start = 0
 
 /datum/round_event/wizard/race/start()

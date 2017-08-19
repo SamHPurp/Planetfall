@@ -12,9 +12,10 @@ Contents:
 /datum/round_event_control/ninja
 	name = "Space Ninja"
 	typepath = /datum/round_event/ghost_role/ninja
-	max_occurrences = 1
+	max_occurrences = 0
 	earliest_start = 30000 // 1 hour
 	min_players = 15
+	weight = 0
 
 /datum/round_event/ghost_role/ninja
 	var/success_spawn = 0

@@ -6,8 +6,8 @@
 	name = "Easter Eggselence"
 	holidayID = EASTER
 	typepath = /datum/round_event/easter
-	weight = -1
-	max_occurrences = 1
+	weight = 0
+	max_occurrences = 0
 	earliest_start = 0
 
 /datum/round_event/easter/announce()
@@ -18,7 +18,7 @@
 	name = "Release the Rabbits!"
 	holidayID = EASTER
 	typepath = /datum/round_event/rabbitrelease
-	weight = 5
+	weight = 0
 	max_occurrences = 10
 
 /datum/round_event/rabbitrelease/announce()

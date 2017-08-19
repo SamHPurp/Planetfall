@@ -1,7 +1,7 @@
 /datum/round_event_control/weightless
 	name = "Gravity Systems Failure"
 	typepath = /datum/round_event/weightless
-	weight = 15
+	weight = 0
 
 /datum/round_event/weightless
 	startWhen = 5
@@ -28,5 +28,3 @@
 
 	if(announceWhen >= 0)
 		command_alert("Artificial gravity arrays are now functioning within normal parameters. Please report any irregularities to your respective head of staff.")
-
-

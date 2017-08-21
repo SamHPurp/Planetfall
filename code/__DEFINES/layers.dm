@@ -13,6 +13,7 @@
 #define HUMAN_IN_HOLE 1.5
 #define LOW_TURF_OVERLAY_HIGH 1.6
 //#define TURF_LAYER 2 //For easy recordkeeping; this is a byond define
+#define BEDROCK_TURF_LAYER 2.01
 #define MID_TURF_LAYER 2.02
 #define HIGH_TURF_LAYER 2.03
 #define ABOVE_OPEN_TURF_LAYER 2.04

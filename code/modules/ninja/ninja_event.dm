@@ -15,7 +15,6 @@ Contents:
 	max_occurrences = 0
 	earliest_start = 30000 // 1 hour
 	min_players = 15
-	weight = 0
 
 /datum/round_event/ghost_role/ninja
 	var/success_spawn = 0

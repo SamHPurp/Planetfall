@@ -3,7 +3,7 @@
 	holidayID = CHRISTMAS
 	typepath = /datum/round_event/treevenge
 	max_occurrences = 0
-	weight = 0
+	weight = 20
 
 /datum/round_event/treevenge/start()
 	for(var/obj/structure/flora/tree/pine/xmas in world)
@@ -19,7 +19,7 @@
 	name = "Presents under Trees (Christmas)"
 	holidayID = CHRISTMAS
 	typepath = /datum/round_event/presents
-	weight = 0							//forces it to be called, regardless of weight
+	weight = -1							//forces it to be called, regardless of weight
 	max_occurrences = 0
 	earliest_start = 0
 
@@ -98,7 +98,7 @@
 	name = "Santa is coming to town! (Christmas)"
 	holidayID = CHRISTMAS
 	typepath = /datum/round_event/santa
-	weight = 0
+	weight = 150
 	max_occurrences = 0
 	earliest_start = 20000
 

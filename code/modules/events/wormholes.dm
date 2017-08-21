@@ -2,7 +2,7 @@
 	name = "Wormholes"
 	typepath = /datum/round_event/wormholes
 	max_occurrences = 0
-	weight = 0
+	weight = 2
 	min_players = 2
 
 

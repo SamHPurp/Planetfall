@@ -3,7 +3,6 @@
 	typepath = /datum/round_event/grey_tide
 	max_occurrences = 0
 	min_players = 5
-	weight = 0
 
 /datum/round_event/grey_tide
 	announceWhen = 50

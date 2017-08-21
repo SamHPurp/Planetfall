@@ -1,7 +1,7 @@
 /datum/round_event_control/abductor
 	name = "Abductors"
 	typepath = /datum/round_event/ghost_role/abductor
-	weight = 0
+	weight = 10
 	max_occurrences = 0
 
 	min_players = 20

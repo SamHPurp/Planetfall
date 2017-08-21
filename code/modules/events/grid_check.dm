@@ -1,7 +1,7 @@
 /datum/round_event_control/grid_check
 	name = "Grid Check"
 	typepath = /datum/round_event/grid_check
-	weight = 0
+	weight = 10
 	max_occurrences = 0
 
 /datum/round_event/grid_check

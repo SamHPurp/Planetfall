@@ -1,7 +1,7 @@
 /datum/round_event_control/weightless
 	name = "Gravity Systems Failure"
 	typepath = /datum/round_event/weightless
-	weight = 0
+	weight = 15
 
 /datum/round_event/weightless
 	startWhen = 5

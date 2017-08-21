@@ -6,7 +6,7 @@
 	name = "Easter Eggselence"
 	holidayID = EASTER
 	typepath = /datum/round_event/easter
-	weight = 0
+	weight = -1
 	max_occurrences = 0
 	earliest_start = 0
 
@@ -18,8 +18,8 @@
 	name = "Release the Rabbits!"
 	holidayID = EASTER
 	typepath = /datum/round_event/rabbitrelease
-	weight = 0
-	max_occurrences = 10
+	weight = 5
+	max_occurrences = 0
 
 /datum/round_event/rabbitrelease/announce()
 	priority_announce("Unidentified furry objects detected coming aboard [station_name()]. Beware of Adorable-ness.", "Fluffy Alert", 'sound/ai/aliens.ogg')

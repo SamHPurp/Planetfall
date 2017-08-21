@@ -1,7 +1,7 @@
 /datum/round_event_control/mice_migration
 	name = "Mice Migration"
 	typepath = /datum/round_event/mice_migration
-	weight = 0
+	weight = 10
 
 /datum/round_event/mice_migration
 	announceWhen = 0

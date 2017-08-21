@@ -4,7 +4,7 @@
 	name = "Friday the 13th"
 	holidayID = FRIDAY_13TH
 	typepath = /datum/round_event/fridaythethirteen
-	weight = 0
+	weight = -1
 	max_occurrences = 0
 	earliest_start = 0
 

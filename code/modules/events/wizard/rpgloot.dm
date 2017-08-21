@@ -1,6 +1,6 @@
 /datum/round_event_control/wizard/rpgloot //its time to minmax your shit
 	name = "RPG Loot"
-	weight = 0
+	weight = 3
 	typepath = /datum/round_event/wizard/rpgloot
 	max_occurrences = 0
 	earliest_start = 0

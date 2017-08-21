@@ -2,7 +2,7 @@
 	name = "2 SPOOKY! (Halloween)"
 	holidayID = HALLOWEEN
 	typepath = /datum/round_event/spooky
-	weight = 0							//forces it to be called, regardless of weight
+	weight = -1							//forces it to be called, regardless of weight
 	max_occurrences = 0
 	earliest_start = 0
 
@@ -31,7 +31,7 @@
 	name = "Eyeball Migration"
 	typepath = /datum/round_event/carp_migration/eyeballs
 	holidayID = HALLOWEEN
-	weight = 0
+	weight = 25
 	earliest_start = 0
 
 /datum/round_event/carp_migration/eyeballs/start()
@@ -44,7 +44,7 @@
 	name = "Pumpkin Wave"
 	typepath = /datum/round_event/meteor_wave/spooky
 	holidayID = HALLOWEEN
-	weight = 0
+	weight = 20
 	max_occurrences = 0
 
 /datum/round_event/meteor_wave/spooky
@@ -59,7 +59,7 @@
 	name = "Clowns"
 	typepath = /datum/round_event/creepy_clowns
 	holidayID = HALLOWEEN
-	weight = 0
+	weight = 20
 	earliest_start = 0
 
 /datum/round_event/creepy_clowns

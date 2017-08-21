@@ -1,6 +1,6 @@
 /datum/round_event_control/wizard/imposter //Mirror Mania
 	name = "Imposter Wizard"
-	weight = 0
+	weight = 1
 	typepath = /datum/round_event/wizard/imposter
 	max_occurrences = 0
 	earliest_start = 0

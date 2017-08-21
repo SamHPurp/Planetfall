@@ -1,8 +1,7 @@
 /datum/round_event_control/sentience
 	name = "Random Human-level Intelligence"
 	typepath = /datum/round_event/ghost_role/sentience
-	weight = 0
-
+	weight = 10
 
 /datum/round_event/ghost_role/sentience
 	minimum_required = 1

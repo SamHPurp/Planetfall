@@ -1,7 +1,7 @@
 /datum/round_event_control/blob
 	name = "Blob"
 	typepath = /datum/round_event/ghost_role/blob
-	weight = 0
+	weight = 5
 	max_occurrences = 0
 
 	min_players = 20

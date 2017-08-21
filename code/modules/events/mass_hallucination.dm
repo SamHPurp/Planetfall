@@ -1,7 +1,7 @@
 /datum/round_event_control/mass_hallucination
 	name = "Mass Hallucination"
 	typepath = /datum/round_event/mass_hallucination
-	weight = 0
+	weight = 7
 	max_occurrences = 0
 	min_players = 1
 

@@ -1,6 +1,6 @@
 /datum/round_event_control/wizard/greentext //Gotta have it!
 	name = "Greentext"
-	weight = 0
+	weight = 4
 	typepath = /datum/round_event/wizard/greentext
 	max_occurrences = 0
 	earliest_start = 0

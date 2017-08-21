@@ -1,7 +1,7 @@
 /datum/round_event_control/spontaneous_appendicitis
 	name = "Spontaneous Appendicitis"
 	typepath = /datum/round_event/spontaneous_appendicitis
-	weight = 0
+	weight = 20
 	max_occurrences = 0
 	earliest_start = 6000
 	min_players = 5 // To make your chance of getting help a bit higher.

@@ -7,6 +7,11 @@
 #define PLANE_SPACE_PARALLAX -90
 
 #define GAME_PLANE 0
+//pitfall.dm for all of these defines. Felt bad not using them; feels bad using them. Thanks.
+#define LOW_TURF 1.3
+#define LOW_TURF_OVERLAY_LOW 1.4
+#define HUMAN_IN_HOLE 1.5
+#define LOW_TURF_OVERLAY_HIGH 1.6
 //#define TURF_LAYER 2 //For easy recordkeeping; this is a byond define
 #define MID_TURF_LAYER 2.02
 #define HIGH_TURF_LAYER 2.03
